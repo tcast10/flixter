@@ -3,7 +3,6 @@ class LessonsController < ApplicationController
   before_action :require_enroll_for_current_course, only: [:show]
 
   def show
-    @lesson = Lesson.find(params[:id])
   end
 
   private
