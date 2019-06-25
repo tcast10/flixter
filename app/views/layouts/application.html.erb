@@ -57,9 +57,47 @@
 
     <div id="footer">
       <div class="container">
-        <b>Teachers</b>
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <b>Teachers</b>
+            <br />
+            <%= link_to 'Teach a Course', new_instructor_course_path %>
+            <br />
+            <%= link_to 'My Dashboard', dashboard_path %>
+          </div>
+          <div class="col-12 col-sm-3">
+            <b>About</b>
+            <br />
+            <%= link_to 'Team', team_path %>
+            <br />
+            <%= link_to 'Careers', career_path %>
+            <br />
+            <%= link_to 'Privacy Policy', privacy_path %>
+          </div>
+          <div class="col-12 col-sm-3">
+            <b>Contact</b>
+            <br />
+            my@email.com
+            <br />
+            One Kendall Square
+            <br />
+            Cambridge MA, 02113
+          </div>
+          <div class="col-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <br />
+            <%= link_to 'https://github.com/tcast10/third-attempt' do %>
+              <span class="fa fa-github-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'https://www.facebook.com/NBCCharlotte/videos/648500052244051/?__xts__[0]=68.ARDRnXXflVutY_WEfwflGxfG9aICG4Jus-4Proph1nXw8UUs42E4TqfGSw25eHSYDCiHsOUWPsaXYK_rkj0pTORN2qBkimp5hb4FXhialmHjc0sH0YE2AtLDMMGj2T7Bjm3d1RI_UpIlGl1JdRmdWHI19OPmNDJ9_-dEOffR1yxUNDeQbQ4drOOhrSC8lVQEiTuxqg8XqiTmWQVW-ENBNmkZXRwmstpRY7Nm01VAS03bywkE6vYV8l33dURo2o9XIXaMLV2GwcbIF-AOtQhq2xOrl_bCQsDiCox0O49ugQFxbZ0EmRLsbyd1mhftrsv4Y5i4deL7YkElO4Vy074hA-lCpb-f9ndyXi5iKQ&__tn__=H-R' do %>
+              <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'https://twitter.com/hashtag/i%20don%27t%20have%20a%20twitter%20account' do %>
+              <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div> 
 
